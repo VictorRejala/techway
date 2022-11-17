@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imgs/favicon.png">
+    <title>Tech Way | Login</title>
+</head>
+<body>
+    <!--<img src="animate/logo2.svg" alt="Logo Animada" style="width:40%">-->
+    <header>
+        <div class="leftHome">
+            <img src="imgs/favicon.png" alt="Logo" id="soon">
+            <h1>Tech Way</h1>
+        </div>
+        <ul class="rightHome">
+            <li style="display: none"><a href="loja.html">Direto para loja</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Loja</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <div class="rightLogin">
+            <div class="logo"><img src="animate/logo2.svg" alt="Logo Animada"></div>
+            <form id="formLogin" class="formLoginBox ">
+                <div class="inputGroup">
+                    <!--<label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>-->
+                    <input type="email" name="email" id="email" required placeholder=" ">
+                    <label>E-mail</label>
+                </div>
+        
+                <div class="inputGroup">
+                    <input type="password" name="password" id="password" placeholder=" " required>
+                    <label for="password">Senha:</label>
+                </div>
+        
+                <div class="button">
+                    <input type="button" name="create" id="create" value="Cadastre-se" onclick="changeBox()">
+                    <input type="submit" name="loginSubmit" id="loginSubmit" value="Entrar">
+                </div>
+                <p class="alert"></p>
+            </form>
+        
+            <form id="formCreateAccount" class="formCreateAccountBox invisible">
+                <div class="inputGroup">
+                    <input type="text" placeholder=" " name="user" id="newUser" required>
+                    <label for="name">Nome:</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="email" name="email" id="newEmail" placeholder=" " required>
+                    <label for="email">E-mail:</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="password" name="password" id="newPassword" placeholder=" " required>
+                    <label for="password">Senha:</label>
+                </div>
+                <div class="button">
+                    <input type="button" name="back" id="back" value="Voltar" onclick="changeBox()">
+                    <input type="button" name="createAccount" id="createAccount" value="Cadastrar">
+                </div>
+                <p class="alertCreate"></p>
+            </form>
+    </main>
+    </div>
+    <script src="js/accounts.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

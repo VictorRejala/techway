@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>Tech Way | Contato</title>
+</head>
+<body>
+    <header>
+        <div class="leftHome">
+            <img id="logo" src="imgs/favicon.png" alt="Logo">
+            <h1>Tech Way</h1>
+        </div>
+        <ul class="rightHome">
+            <li style="display: none"><a href="loja.html">Direto para loja</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Loja</a></li>
+        </ul>   
+        
+    </header>
+    <main>
+        <form>
+            <label for="name">Nome e sobrenome:</label>
+            <input type="text" id="name" class="input-default" required placeholder="Seu Nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input-default" required placeholder="seuemail@email.com">
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" class="input-default" required placeholder="(00) 99999-9999">
+
+            <label for="mensagem">Como podemos ajudar?</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-default" placeholder="Escreva como podemos lhe ajudar"></textarea>
+
+            <fieldset id="legend-default">
+                <legend >Como prefere o nosso contato?</legend>
+                <label for="radio-email"> <input type="radio" name="contact" value="email" id="radio-email"> Email </label>
+
+                <label for="radio-telefone"> <input type="radio" name="contact" value="telefone" id="radio-cellphone"> Telefone </label>
+                
+                <label for="radio-whatsapp"> <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked> Whatsapp </label>
+            </fieldset>
+            
+            
+            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" name="submit" value="Enviar formulário" class="submit">	
+        </form>	
+    </main>
+    <footer>
+        <div class="leftFooter">
+            <img src="imgs/favicon.png" alt="Logo">
+            <h3>Victor Rejala <br>Caua Rogerio</h3>
+        </div>
+        <div class="rightFooter">
+            <h3>Fale Conosco</h3>
+            <p>(71) 92000-0173</p>
+            <p>Rua do Salette, 50 - Barris - Salvador-Ba</p>
+            <p>suport@techway.com</p>
+            <div class="iconFooter">
+                <img src="imgs/iconEmail.png" alt="">
+                <img src="imgs/iconFacebook.png" alt="">
+                <img src="imgs/iconInstagram.png" alt="">
+                <img src="imgs/iconTelegram.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
