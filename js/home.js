@@ -15,7 +15,9 @@ btnAdd.forEach(plus => {
         document.querySelector(".allBuy").appendChild(create(nameItem, priceItem))
         priceItem = priceItem.replace(".","");
         priceItem = priceItem.replace("R$","");
-        totalyPrice.push(parseInt(priceItem))
+        totalyPrice.push(parseInt(priceItem));
+        
+        pricePay = 0;
         
         totalyPrice.forEach(totaly => {
             pricePay += totaly
